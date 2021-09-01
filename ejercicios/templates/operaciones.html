@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="{% url 'ejercicios:respuestaope' %}" method="post">
+    {% csrf_token %}
+    <input type="text" name="firstnumber"><br>
+    <input type="text" name="secondnumber"><br>
+    <select name="operation" >
+        <option value="Suma" selected="selected">Suma</option>
+        <option value="Resta" selected="selected">Resta</option>
+        <option value="Multiplicacion">Multiplicacion</option>
+        <option value="Division">Division</option>
+    </select><br>
+    <input type="submit" name="save">
+</form>
+</body>
+</html>

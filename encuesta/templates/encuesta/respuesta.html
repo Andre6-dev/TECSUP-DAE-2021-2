@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>{{ titulo }}</h2>
+<p>Nombre: {{ nombre }}</p>
+<p>Clave: {{ clave }}</p>
+<p>Educacion: {{ educacion }}</p>
+<p>Nacionalidad: {{ nacionalidad }}</p>
+<p>Idiomas:</p>
+<ul>
+    {% for item in idiomas %}
+    <li>{{ item }}</li>
+    {% endfor %}
+</ul>
+<p>Email: {{ correo }}</p>
+<p>Sitio Web: {{ website }}</p>
+</body>
+</html>

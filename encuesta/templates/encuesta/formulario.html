@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>{{ titulo }}</h2>
+
+<form action="{% url 'encuesta:enviar' %}" method="post">
+    {% csrf_token %}
+    Nombre:
+    <input type="text" name="nombre" maxlength="50"><br>
+    Contraseña:
+    <input type="password" name="password"><br>
+    Educacion:
+    <select name="educacion">
+        <option value="sin-estudios">Sin Estudios</option>
+        <option value="educacion-obligatoria" selected="selected">Educacion Obligatoria</option>
+        <option value="formacion-profesional">Formacion Profesional</option>
+        <option value="universidad">Universidad</option>
+    </select><br>
+    Nacionalidad:
+    <input type="radio" name="na" value="hispana">Hispana
+    <input type="radio" name="na" value="otra">Otra<br>
+    Idiomas:
+    <input type="checkbox" name="idiomas" value="español" checked="checked">Español
+    <input type="checkbox" name="idiomas" value="ingles" >Ingles
+    <input type="checkbox" name="idiomas" value="frances" >Frances
+    <input type="checkbox" name="idiomas" value="aleman" >Aleman<br>
+    Email:
+    <input type="text" name="email"><br>
+    Sitio Web
+    <input type="text" name="sitioweb"><br>
+    // Boton de enviar
+    <input type="submit" name="submit" value="Enviar">
+
+</form>
+
+</body>
+</html>

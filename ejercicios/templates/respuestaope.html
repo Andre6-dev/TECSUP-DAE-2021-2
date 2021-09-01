@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>OPERACIONES</h1>
+    <p>La Operacion que eligio fue {{ name_operacion }}</p>
+    <p>Su primer numero fue {{ a }} y su segundo numero fue {{ b }}</p>
+    {% if name_operacion == "Suma" %}
+        <p>El resultado es {{ resultado_suma }}</p>
+    {% elif name_operacion == "Resta" %}
+        <p>El resultado es {{ resultado_resta }}</p>
+    {% elif name_operacion == "Multiplicacion" %}
+        <p>El resultado es {{ resultado_multiplicacion }}</p>
+    {% elif name_operacion == "Division" %}
+        <p>El resultado es {{ resultado_division }}</p>
+    {% endif %}
+</body>
+</html>
