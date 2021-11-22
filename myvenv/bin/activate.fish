@@ -29,7 +29,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/home/andre/Labs/Desarrollo de Aplicaciones Empresariales/Laboratorio 1/djangoApp/myvenv"
+set -gx VIRTUAL_ENV "/home/andre/WebstormProjects/lab10/myvenv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
