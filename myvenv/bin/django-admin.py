@@ -1,4 +1,4 @@
-#!/home/andre/Labs/Desarrollo de Aplicaciones Empresariales/Laboratorio 1/djangoApp/myvenv/bin/python
+#!/home/andre/WebstormProjects/lab12/myvenv/bin/python
 # When the django-admin.py deprecation ends, remove this script.
 import warnings
 

@@ -1,6 +1,4 @@
-#!/bin/sh
-'''exec' "/home/andre/Labs/Desarrollo de Aplicaciones Empresariales/Laboratorio 1/djangoApp/myvenv/bin/python" "$0" "$@"
-' '''
+#!/home/andre/WebstormProjects/lab12/myvenv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
